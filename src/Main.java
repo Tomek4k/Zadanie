@@ -100,7 +100,7 @@ public class Main {
         float miesiecznarata = miesiecznacena + (miesiecznacena * (oprocentowanie / 100));
         System.out.println("Aktualne cena miesięczna z ratą: " + miesiecznarata );
 
-        System.out.println("Kalkulator fajny");
+        System.out.println("Kalkulator");
         System.out.println("Podaj liczbe 1");
         float liczba1 = text.nextFloat();
         System.out.println("Podaj symbol operacji możliwe: |*| i |/| i |+| i |-|");
