@@ -100,21 +100,32 @@ public class Main {
         float miesiecznarata = miesiecznacena + (miesiecznacena * (oprocentowanie / 100));
         System.out.println("Aktualne cena miesięczna z ratą: " + miesiecznarata );
 
-        System.out.println("Kalkulator");
-        System.out.println("Podaj liczbe 1");
-        float liczba1 = text.nextFloat();
-        System.out.println("Podaj symbol operacji możliwe: |*| i |/| i |+| i |-|");
-        String symbol = text.nextLine();
-        while(symbol != "*" || symbol != "+" || symbol != "-" || symbol != "/") {
-            System.out.println("Podaj symbol operacji możliwe: |*| i |/| i |+| i |-|");
-            symbol = text.nextLine();
-        }
-        float liczba2 = text.nextFloat();
-        while(symbol == "/" && liczba2 == 0) {
 
+System.out.println("Prosty kalkulator (+, -, *, /)");
+
+        System.out.print("Pierwsza liczba: ");
+        double a = sc.nextDouble();
+
+        System.out.print("Operacja: ");
+        char op = sc.next().charAt(0);
+
+        System.out.print("Druga liczba: ");
+        double b = sc.nextDouble();
+
+        switch (op) {
+            case '+': System.out.println("Wynik: " + (a + b)); break;
+            case '-': System.out.println("Wynik: " + (a - b)); break;
+            case '*': System.out.println("Wynik: " + (a * b)); break;
+            case '/': 
+                if (b == 0) System.out.println("Błąd: dzielenie przez zero!");
+                else System.out.println("Wynik: " + (a / b));
+                break;
+            default: System.out.println("Błąd: niepoprawna operacja!");
         }
 
-        return;
+        System.out.println("Naciśnij Enter, aby zakończyć...");
+        try { System.in.read(); } catch (Exception e) {}
     }
 }
+
 */
