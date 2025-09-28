@@ -1,13 +1,11 @@
 /*
 public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        //System.out.println("Wproawdz stopnie celsjusza:");
+
+        System.out.println("Wproawdz stopnie celsjusza:");
         Scanner text = new Scanner(System.in);
 
-        float celsius = text.nextFloat();
-        float fahrenheit = (float)1.8 * celsius + (float)32.0;
+        float celsjusz = text.nextFloat();
+        float fahrenheit = (float)1.8 * celsjusz + (float)32.0;
         System.out.println(celsius+ " Stopni celsjusza to:\n" + fahrenheit +  " Stopni Fahreneita");
 
         System.out.println("Podaj 3 liczby:");
