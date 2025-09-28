@@ -99,7 +99,7 @@ public class Main {
         System.out.println("Aktualne cena miesięczna z ratą: " + miesiecznarata );
 
 
-System.out.println("Prosty kalkulator (+, -, *, /)");
+System.out.println("Prosty kalkulator");
 
         System.out.print("Pierwsza liczba: ");
         double a = sc.nextDouble();
